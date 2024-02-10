@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "cloudshelluser",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcloudshelluser9c89f143",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-cloudshelluser-dev-94701-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/95b8f8a079ecc5034232d8f47cab45248feb87a7"
+}
