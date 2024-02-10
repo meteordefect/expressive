@@ -1,0 +1,12 @@
+{
+  "AppSyncApiName": "cloudshelluser",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authcloudshelluser9c89f143",
+      "Outputs.UserPoolId"
+    ]
+  },
+  "AuthModeLastUpdated": "2024-02-07T09:52:27.622Z"
+}
