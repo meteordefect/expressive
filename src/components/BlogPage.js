@@ -15,7 +15,7 @@ function BlogPage() {
   }, []);
 
   return (
-    <div>
+    <div className="main-section">
       <h1>Blog Posts</h1>
       <ul>
         {posts.map((post) => (

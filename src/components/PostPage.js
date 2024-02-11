@@ -18,7 +18,7 @@ function PostPage() {
   if (!post) return <div>Loading...</div>;
 
   return (
-    <div>
+    <div className="main-section">
       <h1>{post.title}</h1>
       <p>{post.content}</p>
       {/* Additional post content */}
