@@ -1,8 +1,8 @@
 import React from 'react';
 // Import CSS files if not already done
-import './cipher-weekly.webflow.css';
-import './normalize.css';
-import './webflow.css';
+import './styles/cipher-weekly.webflow.css';
+import './styles/normalize.css';
+import './styles/webflow.css';
 
 function HomePage() {
   // Example of dynamically loading blog posts - replace with actual data fetching logic
