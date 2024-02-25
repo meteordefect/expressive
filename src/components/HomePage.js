@@ -1,25 +1,29 @@
 import React from 'react';
+// Import CSS files if not already done
+import './cipher-weekly.webflow.css';
+import './normalize.css';
+import './webflow.css';
 
 function HomePage() {
+  // Example of dynamically loading blog posts - replace with actual data fetching logic
+  const blogPosts = [
+    { title: 'Post 1', content: 'This is the first post.' },
+    // Add more posts here
+  ];
+
   return (
-    <div className="page-container"> {/* Wrapper for the entire page content */}
+    <div className="page-container">
       <header className="header-class" style={{ backgroundColor: '#f8f9fa', padding: '20px', textAlign: 'center' }}>
         <h1>Welcome to My Portfolio</h1>
       </header>
-      <div className="content-container"> {/* Container to center main content */}
+      <div className="content-container">
         <main>
-          <section className="main-section">
-            <h2>About Me</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </section>
-          <section className="main-section">
-            <h2>Projects</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </section>
-          <section className="main-section">
-            <h2>Contact</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </section>
+          {blogPosts.map((post, index) => (
+            <section key={index} className="main-section">
+              <h2>{post.title}</h2>
+              <p>{post.content}</p>
+            </section>
+          ))}
         </main>
       </div>
     </div>
