@@ -1,6 +1,10 @@
 # Getting Started with Create React App
 
-The expressive application is a test if using AWS Aplify to create a portfolio site and blog. It uses AWS Amplify, AWS Cognito Auth, React
+The expressive application is a test if using AWS Aplify to create a portfolio site and blog. It uses AWS Amplify, AWS Cognito Auth, React. 
+
+You can find the frontend here: 
+
+https://dev.dz3vlnco2xx1u.amplifyapp.com/
 
 
 ## Available Scripts
